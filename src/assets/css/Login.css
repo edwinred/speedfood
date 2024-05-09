@@ -1,0 +1,20 @@
+ion-content {
+  --background: #ebebeb;
+  --color: #000000;
+}
+
+ion-title {
+  --color: #ffffff;
+}
+
+ion-card-subtitle {
+  --color: #000000;
+}
+
+ion-toolbard {
+  --color: #fff4f4;
+}
+
+ion-header {
+  --color: #fff4f4;
+}
