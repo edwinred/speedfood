@@ -28,8 +28,6 @@ const Tab1: React.FC = () => {
     setActualizador(!actualizador);
   });
 
-  console.log(data);
-
   return (
     <IonPage>
       <IonHeader>
