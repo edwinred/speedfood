@@ -49,8 +49,6 @@ const Carrito: FC = () => {
     } catch (error) {}
   };
 
-  console.log(data);
-
   return (
     <IonPage>
       <IonContent>
