@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Axios from "../Axios";
-
+//Es un cambio
 function useGetData(url: string, actualizador: boolean = false) {
   const [data, setData] = useState<{}>({});
   const [error, setError] = useState<boolean>(true);
