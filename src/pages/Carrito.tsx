@@ -15,6 +15,7 @@ import { Preferences } from "@capacitor/preferences";
 import { FC, useState } from "react";
 import useGetData from "../hooks/useGetData";
 import Axios from "../Axios";
+import { Link } from "react-router-dom";
 
 const Carrito: FC = () => {
   const [userData, setUserData] = useState<{}>({});
@@ -82,6 +83,10 @@ const Carrito: FC = () => {
           </IonList>
         )}
       </IonContent>
+      <Link to={"pagar"}  >
+        Pagar
+      </Link>
+      
     </IonPage>
   );
 };

@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 //export const urlMain = "http://localhost:3000";
-export const urlMain = "http://192.168.1.68:3000";
+export const urlMain = "http://192.168.1.75:3000";
 export const multipartHeader = {
   headers: {
     "Content-type": "multipart/form-data",

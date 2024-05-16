@@ -23,7 +23,6 @@ import {
 import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Login";
-
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -46,6 +45,7 @@ import Prueba from "./Lista_platillos";
 import { Preferences } from "@capacitor/preferences";
 import { useEffect, useState } from "react";
 import Carrito from "./Carrito";
+import Pago from "./Pago";
 
 setupIonicReact();
 
@@ -58,6 +58,7 @@ const Tabs: React.FC = () => {
         <Route path="/app/tab2" component={Tab2} />
         <Route path="/app/tab3" component={Tab3} />
         <Route path="/app/carrito" component={Carrito} />
+        <Route path="/app/pagar" component={Pago} />
         <Route exact path="/app">
           <Redirect to="/app/tab1" />
         </Route>
