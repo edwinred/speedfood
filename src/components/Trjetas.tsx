@@ -38,8 +38,11 @@ const Trjetas: FC<{
           style={{ width: "300px", height: "300px", objectFit: "cover" }}
         />
         Tiempo de preparacion {data.tiempodepreparacion} min.
-        <IonButton routerLink={`/app/detalles/${data.idtiendas}`}>
-          Ver plati
+        <IonButton
+          color="warning"
+          routerLink={`/app/detalles/${data.idtiendas}`}
+        >
+          Ver platillo
         </IonButton>
       </IonCardContent>
     </IonCard>

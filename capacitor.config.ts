@@ -4,9 +4,9 @@ const config: CapacitorConfig = {
   appId: "io.ionic.starter",
   appName: "speedfood",
   webDir: "dist",
+
   server: {
     androidScheme: "https",
-    allowNavigation: ["192.168.1.81:3000"],
   },
 };
 

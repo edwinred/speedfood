@@ -83,6 +83,14 @@ const Prueba: FC<{ match: { params: { id: string } } }> = ({ match }) => {
   return (
     <IonPage>
       <IonContent fullscreen>
+        <IonButton
+          color="danger"
+          size="small"
+          routerDirection="back"
+          routerLink=".."
+        >
+          regresar
+        </IonButton>
         {!isPending && !error && (
           <IonList>
             {data.response.map((el: any) => (
@@ -114,13 +122,11 @@ const Prueba: FC<{ match: { params: { id: string } } }> = ({ match }) => {
           </IonList>
         )}
         {!isPending && error && <p>Sin platillos</p>}
-
         {isPending && (
           <center>
             <IonSpinner style={{ width: "100px", height: "100px" }} />
           </center>
         )}
-
         <IonModal isOpen={modalOpen}>
           <IonHeader>
             <IonToolbar>
